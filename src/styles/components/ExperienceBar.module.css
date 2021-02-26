@@ -1,0 +1,41 @@
+
+.experienceBar {
+  display: flex;
+  align-items: center;
+  margin: 0 0 3rem;
+}
+
+.experienceBar span {
+  font-size: 1rem;
+}
+
+.experienceBar > div {
+  flex: 1;
+  height: 4px;
+  border-radius: 4px;
+  background: var(--gray-line);
+  margin: 0 1.5rem;
+  position: relative;
+}
+
+.experienceBar > div > div {
+  height: 4px;
+  border-radius: 4px;
+  background-image: linear-gradient(to right, var(--green) , var(--blue-twitter));
+}
+
+span.currentExperience {
+  position: absolute;
+  top: 12px;
+  transform: translateX(-50%);
+  border-radius: 5px;
+}
+
+span.currentExperience p {
+  font-size: 0.75rem;
+  font-weight: bold;
+  position: relative;
+  top: 0px;
+  transform: translateX(45%);
+  color: var(--blue-dark);
+}
