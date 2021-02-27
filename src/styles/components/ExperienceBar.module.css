@@ -22,6 +22,7 @@
   height: 4px;
   border-radius: 4px;
   background-image: linear-gradient(to right, var(--green) , var(--blue-twitter));
+  transition: width 4000ms;
 }
 
 span.currentExperience {
