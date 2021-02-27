@@ -1,4 +1,4 @@
-import Head from 'next/Head';
+import Head from 'next/head';
 import { GetServerSideProps } from 'next';
 
 import { CompletedChallenges } from "../components/CompletedChallenges";
@@ -61,5 +61,3 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
     }
   }
 }
-
-//yarn dev
