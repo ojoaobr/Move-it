@@ -33,14 +33,14 @@ export const ChallengesContext = createContext({} as ChallengesContextData);
 
 
 export function ChallengesProvider({ children, ...rest }: ChallengesProviderProps) {
-  const [level, setLevel] = useState(rest.level ?? 1);
-  const [currentExperience, setCurrentExperience] = useState(rest.currentExperience ?? 0);
-  const [challengesCompleted, setChallengesCompleted] = useState(rest.challengesCompleted ?? 0);
+  const [level, setLevel] = useState(rest.level);
+  const [currentExperience, setCurrentExperience] = useState(rest.currentExperience);
+  const [challengesCompleted, setChallengesCompleted] = useState(rest.challengesCompleted);
 
   const [activeChallenge, setActiveChallenge] = useState(null);
   const [isLevelUpModalOpen, setIsLevelUpModalOpen] = useState(false);
 
-  const experienceToNextLevel = Math.pow((level + 1) * 5, 2)
+  const experienceToNextLevel = Math.pow((level + 1) * 4, 2)
 
   useEffect(() => {
     Notification.requestPermission();
